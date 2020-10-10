@@ -1,0 +1,11 @@
+@import '_colors';
+
+div {
+    h1 {
+        color: $addButton;
+    }
+    h3 {
+        color: $headerBackground;
+        background-color: $checkbox;
+    }
+}
