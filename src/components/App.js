@@ -1,4 +1,8 @@
 import React, { useState } from 'react';
+import Header from './Header';
+import Navigation from './Navigation';
+import Filters from './Filters';
+import Products from './Products';
 
 export default function App() {
 
@@ -12,8 +16,10 @@ export default function App() {
 
     return (
         <div>
-            <h1>Hello there!</h1>
-            <h3>Header three.</h3>
+            <Header/>
+            <Navigation/>
+            <Filters/>
+            <Products/>
         </div>
     );
 }
