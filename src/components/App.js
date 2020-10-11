@@ -10,6 +10,12 @@ export default function App() {
     const [productData, setProductData] = useState([]);
     const [navigationOpened, setNavigationOpened] = useState(false);
     const [productsInCart, setProductsInCart] = useState(0);
+    const [colorFilters, setColorFilters] = useState({
+        blue: true,
+        yellow: true,
+        lime: true,
+        mint: true
+    });
 
     useEffect(() => {
         fetch('http://localhost:3000/api/products')
@@ -17,7 +23,9 @@ export default function App() {
         .then(data => {
             setProductData(data);
         });
-    }, [])
+    }, []);
+
+
 
     return (
         <div>
@@ -30,11 +38,15 @@ export default function App() {
                 setNavigationOpened={setNavigationOpened}
             />
             <main>
-                <Filters/>
+                <Filters 
+                    colorFilters={colorFilters}
+                    setColorFilters={setColorFilters}
+                />
                 <Products 
                     productData={productData}
                     productsInCart={productsInCart}
                     setProductsInCart={setProductsInCart}
+                    colorFilters={colorFilters}
                 />
             </main>
         </div>
