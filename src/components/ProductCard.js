@@ -14,7 +14,19 @@ export default function ProductCard( { productData }) {
             />
             <button className="add-to-cart-button">Add to cart</button>
             <div className="product-name">{title}</div>
-            <div className="price">{currency + prices.base}</div>
+            <div className="prices">     
+                {
+                    prices.after_discount &&
+                    <span className="price-old">{currency + prices.base}</span>
+                }
+                <span className="price">
+                    {
+                        prices.after_discount ? 
+                        currency + prices.after_discount : 
+                        currency + prices.base
+                    }
+                </span>
+            </div>
         </div>
     );
 }
