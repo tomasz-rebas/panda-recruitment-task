@@ -8,6 +8,7 @@ import Products from './Products';
 export default function App() {
 
     const [productData, setProductData] = useState([]);
+    const [navigationOpened, setNavigationOpened] = useState(false);
 
     useEffect(() => {
         fetch('http://localhost:3000/api/products')
@@ -19,8 +20,8 @@ export default function App() {
 
     return (
         <div>
-            <Header/>
-            <Navigation/>
+            <Header setNavigationOpened={setNavigationOpened}/>
+            <Navigation navigationOpened={navigationOpened} setNavigationOpened={setNavigationOpened}/>
             <main>
                 <Filters/>
                 <Products productData={productData}/>

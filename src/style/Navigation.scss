@@ -2,8 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
 
 nav {
-    position: absolute;
-    left: -320px;
+    position: fixed;
     top: 0;
 
     border-right: 2px solid $background;
@@ -36,6 +35,8 @@ nav {
 
 .navbar-close-button {
     height: 50px;
+    width: 50px;
+    cursor: pointer;
     
     span {
         position: absolute;
@@ -58,4 +59,14 @@ nav {
     span:nth-child(2) {
         transform: rotate(-45deg);
     }
+}
+
+.nav-closed {
+    left: -320px;
+    transition: 0.3s;
+}
+
+.nav-open {
+    left: 0;
+    transition: 0.3s;
 }

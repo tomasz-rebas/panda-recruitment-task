@@ -1,11 +1,11 @@
 import React from 'react';
 import './../style/Navigation.scss';
 
-export default function Navigation() {
+export default function Navigation( { navigationOpened, setNavigationOpened }) {
 
     return (
-        <nav>                
-            <div className="navbar-close-button">
+        <nav className={navigationOpened ? 'nav-open' : 'nav-closed'}>                
+            <div className="navbar-close-button" onClick={() => setNavigationOpened(false)}>
                 <span></span>
                 <span></span>
             </div>

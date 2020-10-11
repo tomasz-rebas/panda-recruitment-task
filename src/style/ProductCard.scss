@@ -9,7 +9,7 @@
 .add-to-cart-button {
     display: block;
     border: none;
-    background-color: $price;
+    background-color: $addButton;
     color: $background;
     width: 100%;
     padding-top: 4px;
@@ -45,7 +45,7 @@
 .price {
     font-size: 18px;
     color: $price;
-    
+
     padding: {
         left: 5px;
         right: 5px;
