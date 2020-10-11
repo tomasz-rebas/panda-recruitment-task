@@ -21,7 +21,7 @@ export default function App() {
             <Navigation/>
             <main>
                 <Filters/>
-                <Products/>
+                <Products productData={productData}/>
             </main>
         </div>
     );
