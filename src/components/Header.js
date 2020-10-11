@@ -15,11 +15,16 @@ export default function Header() {
                     width="60" 
                     height="70"
                 />
-                <img 
-                    src="/icons/shopping-cart.svg"
-                    width="50" 
-                    height="60"
-                />
+                <div>
+                    <img 
+                        src="/icons/shopping-cart.svg"
+                        width="50" 
+                        height="60"
+                    />
+                    <div className="cart-quantity-icon">
+                        <span>17</span>
+                    </div>
+                </div>
             </div>
             <h1>Panda Collection</h1>
         </header>
