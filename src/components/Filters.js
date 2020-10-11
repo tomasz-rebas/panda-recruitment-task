@@ -3,6 +3,14 @@ import './../style/Filters.scss';
 
 export default function Filters( { colorFilters, setColorFilters }) {
 
+    function changeFilter(event) {
+        const { name } = event.target;
+        setColorFilters({
+            ...colorFilters,
+            [name]: !colorFilters[name]
+        })
+    }
+
     return (
         <div className="filters">
             <h4>Filter by</h4>
@@ -12,10 +20,7 @@ export default function Filters( { colorFilters, setColorFilters }) {
                     <input 
                         type="checkbox"
                         name="blue"
-                        onChange={() => setColorFilters({
-                            ...colorFilters,
-                            blue: !colorFilters.blue
-                        })}
+                        onChange={changeFilter}
                         checked={colorFilters.blue ? true : false}
                     />
                     <span className="color-preview blue"></span>
@@ -25,10 +30,7 @@ export default function Filters( { colorFilters, setColorFilters }) {
                     <input 
                         type="checkbox"
                         name="yellow"
-                        onChange={() => setColorFilters({
-                            ...colorFilters,
-                            yellow: !colorFilters.yellow
-                        })}
+                        onChange={changeFilter}
                         checked={colorFilters.yellow ? true : false}
                     />
                     <span className="color-preview pastel-yellow"></span>
@@ -38,10 +40,7 @@ export default function Filters( { colorFilters, setColorFilters }) {
                     <input
                         type="checkbox"
                         name="lime"
-                        onChange={() => setColorFilters({
-                            ...colorFilters,
-                            lime: !colorFilters.lime
-                        })}
+                        onChange={changeFilter}
                         checked={colorFilters.lime ? true : false}
                     />
                     <span className="color-preview lime-green"></span>
@@ -51,10 +50,7 @@ export default function Filters( { colorFilters, setColorFilters }) {
                     <input
                         type="checkbox"
                         name="mint"
-                        onChange={() => setColorFilters({
-                            ...colorFilters,
-                            mint: !colorFilters.mint
-                        })}
+                        onChange={changeFilter}
                         checked={colorFilters.mint ? true : false}
                     />
                     <span className="color-preview mint"></span>
