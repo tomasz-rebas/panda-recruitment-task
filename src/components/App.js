@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './../style/App.scss';
 import Header from './Header';
 import Navigation from './Navigation';
 import Filters from './Filters';

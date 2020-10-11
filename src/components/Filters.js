@@ -1,4 +1,5 @@
 import React from 'react';
+import './../style/Filters.scss';
 
 export default function Filters() {
 
@@ -10,22 +11,22 @@ export default function Filters() {
                 <li>
                     <input type="checkbox"/>
                     <span className="color-preview"></span>
-                    <span>blue</span>
+                    <span className="color-name">blue</span>
                 </li>
                 <li>
                     <input type="checkbox"/>
                     <span className="color-preview"></span>
-                    <span>pastel yellow</span>
+                    <span className="color-name">pastel yellow</span>
                 </li>
                 <li>
                     <input type="checkbox"/>
                     <span className="color-preview"></span>
-                    <span>lime green</span>
+                    <span className="color-name">lime green</span>
                 </li>
                 <li>
                     <input type="checkbox"/>
                     <span className="color-preview"></span>
-                    <span>mint</span>
+                    <span className="color-name">mint</span>
                 </li>
             </ul>
         </div>
