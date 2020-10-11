@@ -75,7 +75,7 @@ h1 {
 
 nav {
     position: absolute;
-    left: 0;
+    left: -320px;
     top: 0;
 
     border-right: 2px solid $background;
@@ -98,17 +98,21 @@ nav {
         display: block;
         text-decoration: none;
         color: $background;
+
+        margin: {
+            top: 14px;
+            bottom: 14px;
+        }
     }
 }
 
 .navbar-close-button {
-
     height: 50px;
     
     span {
         position: absolute;
         display: block;
-        height: 4px;
+        height: 5px;
         width: 35px;
         background-color: $background;
         border-radius: 3px;
@@ -126,4 +130,47 @@ nav {
     span:nth-child(2) {
         transform: rotate(-45deg);
     }
+}
+
+main {
+    padding: 5px 20px 5px 20px;
+}
+
+.filters {
+    max-width: 300px;
+    color: $headerBackground;
+
+    h4,
+    h5 {
+        font: {
+            family: 'Lalezar', cursive;
+            weight: normal;
+        }
+    }
+
+    h4 {
+        font-size: 23px;
+        border-bottom: 2px solid $headerBackground;
+    }
+
+    h5 {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+
+    ul {
+        padding-left: 0;
+        margin: 0;
+
+        li {
+            list-style-type: none;
+        }
+    }
+}
+
+.color-preview {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: aqua;
 }

@@ -18,8 +18,10 @@ export default function App() {
         <div>
             <Header/>
             <Navigation/>
-            <Filters/>
-            <Products/>
+            <main>
+                <Filters/>
+                <Products/>
+            </main>
         </div>
     );
 }
