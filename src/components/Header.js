@@ -5,8 +5,11 @@ export default function Header() {
     return (
         <header>
             <div className="topbar">
-                <button className="navbar-button">
-                </button>
+                <div className="navbar-button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <img 
                     src="/logo.svg" 
                     width="60" 
