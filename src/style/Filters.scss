@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
 
 .filters {
-    max-width: 300px;
+    min-width: 300px;
     color: $headerBackground;
 
     h4,
@@ -16,6 +16,7 @@
     h4 {
         font-size: 23px;
         border-bottom: 2px solid $headerBackground;
+        margin-top: 0;
     }
 
     h5 {

@@ -4,5 +4,8 @@ body {
 }
 
 main {
-    padding: 5px 20px 5px 20px;
+    display: flex;
+    flex-direction: row;
+    padding: 30px 20px 30px 20px;
+    justify-content: space-between;
 }

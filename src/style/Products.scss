@@ -1,0 +1,9 @@
+@import '_colors';
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+
+.products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
