@@ -37,8 +37,23 @@
     display: inline-block;
     width: 15px;
     height: 15px;
-    background-color: aqua;
     margin: 0 4px 0 13px;
+}
+
+.blue { 
+    background-color: $blue;
+}
+
+.pastel-yellow { 
+    background-color: $pastelYellow;
+}
+
+.lime-green { 
+    background-color: $limeGreen;
+}
+
+.mint { 
+    background-color: $mint;
 }
 
 .color-name {

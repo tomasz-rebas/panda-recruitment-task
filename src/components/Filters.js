@@ -10,22 +10,22 @@ export default function Filters() {
             <ul>
                 <li>
                     <input type="checkbox"/>
-                    <span className="color-preview"></span>
+                    <span className="color-preview blue"></span>
                     <span className="color-name">blue</span>
                 </li>
                 <li>
                     <input type="checkbox"/>
-                    <span className="color-preview"></span>
+                    <span className="color-preview pastel-yellow"></span>
                     <span className="color-name">pastel yellow</span>
                 </li>
                 <li>
                     <input type="checkbox"/>
-                    <span className="color-preview"></span>
+                    <span className="color-preview lime-green"></span>
                     <span className="color-name">lime green</span>
                 </li>
                 <li>
                     <input type="checkbox"/>
-                    <span className="color-preview"></span>
+                    <span className="color-preview mint"></span>
                     <span className="color-name">mint</span>
                 </li>
             </ul>
