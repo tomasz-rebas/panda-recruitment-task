@@ -1,12 +1,15 @@
 import React from 'react';
 import './../style/Header.scss';
 
-export default function Header( { setNavigationOpened }) {
+export default function Header( { setNavigationOpened, productsInCart }) {
 
     return (
         <header>
             <div className="topbar">
-                <div className="navbar-button" onClick={() => setNavigationOpened(true)}>
+                <div 
+                    className="navbar-button" 
+                    onClick={() => setNavigationOpened(true)}
+                >
                     <span></span>
                     <span></span>
                     <span></span>
@@ -24,9 +27,12 @@ export default function Header( { setNavigationOpened }) {
                         height="60"
                         alt="Shopping cart"
                     />
-                    <div className="cart-quantity-icon">
-                        <span>17</span>
-                    </div>
+                    {
+                        productsInCart > 0 &&
+                        <div className="cart-quantity-icon">
+                            <span>{productsInCart}</span>
+                        </div>
+                    }
                 </div>
             </div>
             <h1>Panda Collection</h1>

@@ -9,6 +9,7 @@ export default function App() {
 
     const [productData, setProductData] = useState([]);
     const [navigationOpened, setNavigationOpened] = useState(false);
+    const [productsInCart, setProductsInCart] = useState(0);
 
     useEffect(() => {
         fetch('http://localhost:3000/api/products')
@@ -20,11 +21,21 @@ export default function App() {
 
     return (
         <div>
-            <Header setNavigationOpened={setNavigationOpened}/>
-            <Navigation navigationOpened={navigationOpened} setNavigationOpened={setNavigationOpened}/>
+            <Header 
+                setNavigationOpened={setNavigationOpened}
+                productsInCart={productsInCart}
+            />
+            <Navigation 
+                navigationOpened={navigationOpened}
+                setNavigationOpened={setNavigationOpened}
+            />
             <main>
                 <Filters/>
-                <Products productData={productData}/>
+                <Products 
+                    productData={productData}
+                    productsInCart={productsInCart}
+                    setProductsInCart={setProductsInCart}
+                />
             </main>
         </div>
     );

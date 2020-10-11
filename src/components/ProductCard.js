@@ -1,7 +1,7 @@
 import React from 'react';
 import './../style/ProductCard.scss';
 
-export default function ProductCard( { productData }) {
+export default function ProductCard( { productData, productsInCart, setProductsInCart }) {
 
     const {title, currency, images, prices, attributes} = productData;
 
@@ -13,7 +13,12 @@ export default function ProductCard( { productData }) {
                 height="290"
                 alt="Product"
             />
-            <button className="add-to-cart-button">Add to cart</button>
+            <button 
+                className="add-to-cart-button"
+                onClick={() => setProductsInCart(productsInCart + 1)}
+            >
+                Add to cart
+            </button>
             <div className="product-name">{title}</div>
             <div className="prices">     
                 {

@@ -2,7 +2,7 @@ import React from 'react';
 import ProductCard from './ProductCard';
 import './../style/Products.scss';
 
-export default function Products( { productData }) {
+export default function Products( { productData, productsInCart, setProductsInCart }) {
 
     return (
         <div className="products">
@@ -10,6 +10,8 @@ export default function Products( { productData }) {
                 <ProductCard 
                     productData={product}
                     key={product.id}
+                    productsInCart={productsInCart}
+                    setProductsInCart={setProductsInCart}
                 />
             ))}
         </div>

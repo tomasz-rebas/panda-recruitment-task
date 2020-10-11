@@ -5,7 +5,10 @@ export default function Navigation( { navigationOpened, setNavigationOpened }) {
 
     return (
         <nav className={navigationOpened ? 'nav-open' : 'nav-closed'}>                
-            <div className="navbar-close-button" onClick={() => setNavigationOpened(false)}>
+            <div 
+                className="navbar-close-button"
+                onClick={() => setNavigationOpened(false)}
+            >
                 <span></span>
                 <span></span>
             </div>
