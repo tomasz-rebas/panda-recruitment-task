@@ -9,10 +9,10 @@ export default function Navigation() {
                 <span></span>
                 <span></span>
             </div>
-            <a href="">Home</a>
-            <a href="">Products</a>
-            <a href="">My Account</a>
-            <a href="">Customer Service</a>
+            <a href="/">Home</a>
+            <a href="/products">Products</a>
+            <a href="/my_account">My Account</a>
+            <a href="/customer">Customer Service</a>
         </nav>
     );
 }

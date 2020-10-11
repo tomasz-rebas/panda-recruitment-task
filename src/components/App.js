@@ -14,18 +14,8 @@ export default function App() {
         .then(response => response.json())
         .then(data => {
             setProductData(data);
-            console.log('fetched');
         });
     }, [])
-
-
-    let products;
-
-    // if (productData) {
-    //     products = <Products productData={productData}/>
-    // } else {
-    //     products = <div></div>
-    // }
 
     return (
         <div>

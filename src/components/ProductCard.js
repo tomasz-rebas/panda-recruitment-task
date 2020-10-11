@@ -3,7 +3,7 @@ import './../style/ProductCard.scss';
 
 export default function ProductCard( { productData }) {
 
-    const {id, title, currency, images, prices, attributes} = productData;
+    const {title, currency, images, prices, attributes} = productData;
 
     return (
         <div className="product-card">
@@ -11,6 +11,7 @@ export default function ProductCard( { productData }) {
                 src={'http://localhost:3000' + images.thumbnail}
                 width="216"
                 height="290"
+                alt="Product"
             />
             <button className="add-to-cart-button">Add to cart</button>
             <div className="product-name">{title}</div>
