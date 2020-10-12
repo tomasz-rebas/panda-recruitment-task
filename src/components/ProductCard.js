@@ -8,7 +8,7 @@ export default function ProductCard( { productData, productsInCart, setProductsI
     return (
         <div className="product-card">
             <img 
-                src={'http://localhost:3000' + images.thumbnail}
+                src={process.env.REACT_APP_PRODUCT_API_URL + images.thumbnail.substring(1)}
                 width="216"
                 height="290"
                 alt="Product"

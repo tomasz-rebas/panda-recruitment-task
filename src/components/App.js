@@ -18,7 +18,7 @@ export default function App() {
     });
 
     useEffect(() => {
-        fetch('http://localhost:3000/api/products')
+        fetch(process.env.REACT_APP_PRODUCT_API_URL + 'api/products')
         .then(response => response.json())
         .then(data => {
             setProductData(data);
