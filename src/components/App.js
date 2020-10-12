@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import './../style/App.scss';
 import Header from './Header';
 import Navigation from './Navigation';
 import Filters from './Filters';
 import Products from './Products';
+import './../style/App.scss';
 
 export default function App() {
 

@@ -3,7 +3,7 @@ import './../style/ProductCard.scss';
 
 export default function ProductCard( { productData, productsInCart, setProductsInCart }) {
 
-    const {title, currency, images, prices, attributes} = productData;
+    const {title, currency, images, prices} = productData;
 
     return (
         <div className="product-card">
@@ -33,6 +33,16 @@ export default function ProductCard( { productData, productsInCart, setProductsI
                     }
                 </span>
             </div>
+            {
+                prices.after_discount &&
+                <img 
+                    src="/icons/sale.svg"
+                    width="50" 
+                    height="60"
+                    alt="Sale"
+                    className="sale-icon"
+                />
+            }
         </div>
     );
 }

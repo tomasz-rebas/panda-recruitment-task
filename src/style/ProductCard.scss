@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
 
 .product-card {
+    position: relative;
     margin: 30px;
     width: 216px;
 }
@@ -20,6 +21,11 @@
         weight: normal;
         size: 20px;
     }
+}
+
+.add-to-cart-button:hover {
+    background-color: $price;
+    transition: 0.3s;
 }
 
 .product-name {
@@ -51,4 +57,10 @@
         left: 5px;
         right: 5px;
     }
+}
+
+.sale-icon {
+    position: absolute;
+    right: -30px;
+    bottom: 60px;
 }
