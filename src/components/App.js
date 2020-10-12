@@ -8,7 +8,7 @@ import Products from './Products';
 export default function App() {
 
     const [productData, setProductData] = useState([]);
-    const [navigationOpened, setNavigationOpened] = useState(false);
+    const [isNavigationOpened, setIsNavigationOpened] = useState(false);
     const [productsInCart, setProductsInCart] = useState(0);
     const [colorFilters, setColorFilters] = useState({
         blue: true,
@@ -28,11 +28,11 @@ export default function App() {
     return (
         <div className="wrapper">
             <Header 
-                navigationOpened={navigationOpened}
-                setNavigationOpened={setNavigationOpened}
+                isNavigationOpened={isNavigationOpened}
+                setIsNavigationOpened={setIsNavigationOpened}
                 productsInCart={productsInCart}
             />
-            {navigationOpened && <Navigation/>}
+            {isNavigationOpened && <Navigation/>}
             <main>
                 <Filters 
                     colorFilters={colorFilters}
