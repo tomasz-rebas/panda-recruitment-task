@@ -26,15 +26,20 @@ export default function App() {
     }, []);
 
     return (
-        <div>
+        <div className="wrapper">
             <Header 
+                navigationOpened={navigationOpened}
                 setNavigationOpened={setNavigationOpened}
                 productsInCart={productsInCart}
             />
-            <Navigation 
-                navigationOpened={navigationOpened}
-                setNavigationOpened={setNavigationOpened}
-            />
+            {
+                navigationOpened &&
+                
+                <Navigation 
+                    navigationOpened={navigationOpened}
+                    setNavigationOpened={setNavigationOpened}
+                />
+            }
             <main>
                 <Filters 
                     colorFilters={colorFilters}

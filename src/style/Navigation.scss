@@ -2,14 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
 
 nav {
-    position: fixed;
+    position: absolute;
     top: 0;
+    left: 0;
 
     border-right: 2px solid $background;
 
     width: 230px;
-    height: 100vh;
-    padding: 30px 40px 30px 40px;
+    height: 100%;
+    padding: 70px 40px 30px 40px;
     
     background-color: $headerBackground;
 
@@ -33,40 +34,40 @@ nav {
     }
 }
 
-.navbar-close-button {
-    height: 50px;
-    width: 50px;
-    cursor: pointer;
+// .navbar-close-button {
+//     height: 50px;
+//     width: 50px;
+//     cursor: pointer;
     
-    span {
-        position: absolute;
-        display: block;
-        height: 5px;
-        width: 35px;
-        background-color: $background;
-        border-radius: 3px;
-        margin: {
-            top: 7px;
-            bottom: 7px;
-        }
-        transform: rotate(45deg);
-    }
+//     span {
+//         position: absolute;
+//         display: block;
+//         height: 5px;
+//         width: 35px;
+//         background-color: $background;
+//         border-radius: 3px;
+//         margin: {
+//             top: 7px;
+//             bottom: 7px;
+//         }
+//         transform: rotate(45deg);
+//     }
 
-    span:nth-child(1) {
-        transform: rotate(45deg);
-    }
+//     span:nth-child(1) {
+//         transform: rotate(45deg);
+//     }
 
-    span:nth-child(2) {
-        transform: rotate(-45deg);
-    }
-}
+//     span:nth-child(2) {
+//         transform: rotate(-45deg);
+//     }
+// }
 
-.nav-closed {
-    left: -320px;
-    transition: 0.3s;
-}
+// .nav-closed {
+//     left: -320px;
+//     transition: 0.3s;
+// }
 
-.nav-open {
-    left: 0;
-    transition: 0.3s;
-}
+// .nav-open {
+//     left: 0;
+//     transition: 0.3s;
+// }

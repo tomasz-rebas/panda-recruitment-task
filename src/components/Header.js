@@ -1,14 +1,14 @@
 import React from 'react';
 import './../style/Header.scss';
 
-export default function Header( { setNavigationOpened, productsInCart }) {
+export default function Header( { navigationOpened, setNavigationOpened, productsInCart }) {
 
     return (
         <header>
             <div className="topbar">
                 <div 
-                    className="navbar-button" 
-                    onClick={() => setNavigationOpened(true)}
+                    className={navigationOpened ? 'navbar-button close-icon' : 'navbar-button'} 
+                    onClick={() => setNavigationOpened(!navigationOpened)}
                 >
                     <span></span>
                     <span></span>

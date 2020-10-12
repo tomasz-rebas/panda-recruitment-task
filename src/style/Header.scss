@@ -39,11 +39,38 @@ h1 {
         width: 100%;
         background-color: $headerBackground;
         border-radius: 3px;
+        transition: 0.3s;
         margin: {
             top: 7px;
             bottom: 7px;
         }
     }
+
+    z-index: 1;
+}
+
+// hamburger button animation
+
+.close-icon span:nth-child(1) {
+    background-color: $background;
+    transform: rotate(45deg);
+    transition: 0.3s;
+    position: relative;
+    top: 11px;
+}
+
+.close-icon span:nth-child(2) {
+    background-color: $background;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.close-icon span:nth-child(3) {
+    background-color: $background;
+    transform: rotate(-45deg);
+    transition: 0.3s;
+    position: relative;
+    bottom: 11px;
 }
 
 .cart-quantity-icon {
