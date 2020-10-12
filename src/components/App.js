@@ -32,14 +32,7 @@ export default function App() {
                 setNavigationOpened={setNavigationOpened}
                 productsInCart={productsInCart}
             />
-            {
-                navigationOpened &&
-                
-                <Navigation 
-                    navigationOpened={navigationOpened}
-                    setNavigationOpened={setNavigationOpened}
-                />
-            }
+            {navigationOpened && <Navigation/>}
             <main>
                 <Filters 
                     colorFilters={colorFilters}

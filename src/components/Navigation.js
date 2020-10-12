@@ -1,7 +1,7 @@
 import React from 'react';
 import './../style/Navigation.scss';
 
-export default function Navigation( { navigationOpened, setNavigationOpened }) {
+export default function Navigation() {
 
     return (
         <nav>
