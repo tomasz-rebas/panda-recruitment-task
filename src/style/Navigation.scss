@@ -1,5 +1,4 @@
 @import '_colors';
-@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
 
 nav {
     position: absolute;
@@ -31,5 +30,18 @@ nav {
             top: 14px;
             bottom: 14px;
         }
+    }
+
+    z-index: 1;
+}
+
+@media (max-width: $mobileResolution) {
+    nav {
+        width: 100%;
+        text-align: center;
+        padding: {
+            left: 0;
+            right: 0;
+        };
     }
 }

@@ -1,5 +1,4 @@
 @import '_colors';
-@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
 
 .navbar-button {
     display: inline-block;
@@ -20,7 +19,7 @@
         }
     }
 
-    z-index: 1;
+    z-index: 2;
 }
 
 .close-icon span {
