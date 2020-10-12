@@ -1,4 +1,5 @@
 import React from 'react';
+import NavbarButton from './NavbarButton';
 import './../style/Header.scss';
 
 export default function Header( { isNavigationOpened, setIsNavigationOpened, productsInCart }) {
@@ -6,14 +7,10 @@ export default function Header( { isNavigationOpened, setIsNavigationOpened, pro
     return (
         <header>
             <div className="topbar">
-                <div 
-                    className={isNavigationOpened ? 'navbar-button close-icon' : 'navbar-button'} 
-                    onClick={() => setIsNavigationOpened(!isNavigationOpened)}
-                >
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+                <NavbarButton
+                    isNavigationOpened={isNavigationOpened}
+                    setIsNavigationOpened={setIsNavigationOpened}
+                />
                 <img 
                     src="/logo.svg" 
                     width="60" 

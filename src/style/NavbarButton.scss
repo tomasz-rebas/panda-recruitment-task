@@ -1,0 +1,44 @@
+@import '_colors';
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+
+.navbar-button {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+
+    span {
+        display: block;
+        height: 4px;
+        width: 100%;
+        background-color: $headerBackground;
+        border-radius: 3px;
+        transition: 0.3s;
+        margin: {
+            top: 7px;
+            bottom: 7px;
+        }
+    }
+
+    z-index: 1;
+}
+
+.close-icon span {
+    background-color: $background;
+    transition: 0.3s;
+    position: relative;
+}
+
+.close-icon span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 11px;
+}
+
+.close-icon span:nth-child(2) {
+    opacity: 0;
+}
+
+.close-icon span:nth-child(3) {
+    transform: rotate(-45deg);
+    bottom: 11px;
+}
