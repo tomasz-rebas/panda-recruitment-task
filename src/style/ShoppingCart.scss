@@ -1,0 +1,24 @@
+@import '_colors';
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+
+.cart-quantity-icon {
+    position: absolute;
+    top: 16px;
+    right: 14px;
+
+    width: 20px;
+    height: 20px;
+
+    background-color: $price;
+    border-radius: 50%;
+
+    color: $background;
+    font-weight: bold;
+    font-size: 11px;
+    text-align: center;
+
+    span {
+        position: relative;
+        top: 4px;
+    }
+}

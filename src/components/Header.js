@@ -1,5 +1,6 @@
 import React from 'react';
 import NavbarButton from './NavbarButton';
+import ShoppingCart from './ShoppingCart';
 import './../style/Header.scss';
 
 export default function Header( { isNavigationOpened, setIsNavigationOpened, productsInCart }) {
@@ -17,20 +18,7 @@ export default function Header( { isNavigationOpened, setIsNavigationOpened, pro
                     height="70"
                     alt="Logo"
                 />
-                <div>
-                    <img 
-                        src="/icons/shopping-cart.svg"
-                        width="50" 
-                        height="60"
-                        alt="Shopping cart"
-                    />
-                    {
-                        productsInCart > 0 &&
-                        <div className="cart-quantity-icon">
-                            <span>{productsInCart}</span>
-                        </div>
-                    }
-                </div>
+                <ShoppingCart productsInCart={productsInCart}/>
             </div>
             <h1>Panda Collection</h1>
         </header>

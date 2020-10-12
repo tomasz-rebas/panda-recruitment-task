@@ -26,25 +26,3 @@ h1 {
     align-items: center;
     padding: 8px 20px 8px 20px;
 }
-
-.cart-quantity-icon {
-    position: absolute;
-    top: 16px;
-    right: 14px;
-
-    width: 20px;
-    height: 20px;
-
-    background-color: $price;
-    border-radius: 50%;
-
-    color: $background;
-    font-weight: bold;
-    font-size: 11px;
-    text-align: center;
-
-    span {
-        position: relative;
-        top: 4px;
-    }
-}
