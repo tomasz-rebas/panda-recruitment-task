@@ -11,51 +11,44 @@ export default function Filters( { colorFilters, setColorFilters }) {
         })
     }
 
+    const colors = [
+        {
+            name: 'blue',
+            label: 'blue'
+        },
+        {
+            name: 'yellow',
+            label: 'pastel yellow'
+        },
+        {
+            name: 'lime',
+            label: 'lime green'
+        },
+        {
+            name: 'mint',
+            label: 'mint'
+        }
+    ];
+
+    const filterInputs = colors.map((color, index) => (
+        <li key={'color-'+index}>
+            <input 
+                type="checkbox"
+                name={color.name}
+                onChange={changeFilter}
+                checked={colorFilters[color.name] ? true : false}
+            />
+            <span className={'color-preview color-preview-' + color.name}></span>
+            <span className="color-name">{color.label}</span>
+        </li>  
+    ));
+    
     return (
         <div className="filters">
             <h4>Filter by</h4>
             <h5>Color</h5>
             <ul>
-                <li>
-                    <input 
-                        type="checkbox"
-                        name="blue"
-                        onChange={changeFilter}
-                        checked={colorFilters.blue ? true : false}
-                    />
-                    <span className="color-preview blue"></span>
-                    <span className="color-name">blue</span>
-                </li>
-                <li>
-                    <input 
-                        type="checkbox"
-                        name="yellow"
-                        onChange={changeFilter}
-                        checked={colorFilters.yellow ? true : false}
-                    />
-                    <span className="color-preview pastel-yellow"></span>
-                    <span className="color-name">pastel yellow</span>
-                </li>
-                <li>
-                    <input
-                        type="checkbox"
-                        name="lime"
-                        onChange={changeFilter}
-                        checked={colorFilters.lime ? true : false}
-                    />
-                    <span className="color-preview lime-green"></span>
-                    <span className="color-name">lime green</span>
-                </li>
-                <li>
-                    <input
-                        type="checkbox"
-                        name="mint"
-                        onChange={changeFilter}
-                        checked={colorFilters.mint ? true : false}
-                    />
-                    <span className="color-preview mint"></span>
-                    <span className="color-name">mint</span>
-                </li>
+                {filterInputs}
             </ul>
         </div>
     );
