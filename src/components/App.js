@@ -9,6 +9,7 @@ export default function App() {
 
     const [productData, setProductData] = useState([]);
     const [isNavigationOpened, setIsNavigationOpened] = useState(false);
+    const [areFiltersExpanded, setAreFiltersExpanded] = useState(false);
     const [productsInCart, setProductsInCart] = useState(0);
     const [colorFilters, setColorFilters] = useState({
         blue: true,
@@ -40,6 +41,8 @@ export default function App() {
                 <Filters 
                     colorFilters={colorFilters}
                     setColorFilters={setColorFilters}
+                    areFiltersExpanded={areFiltersExpanded}
+                    setAreFiltersExpanded={setAreFiltersExpanded}
                 />
                 <Products 
                     productData={productData}

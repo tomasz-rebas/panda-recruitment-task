@@ -1,6 +1,7 @@
 @import '_colors';
 
 .filters {
+    position: relative;
     min-width: 300px;
     color: $headerBackground;
 
@@ -33,6 +34,14 @@
     }
 }
 
+.filters-header {
+    display: block;
+}
+
+.filters-header-mobile {
+    display: none;
+}
+
 .color-preview {
     display: inline-block;
     width: 15px;
@@ -58,4 +67,54 @@
 
 .color-name {
     font-size: 15px;
+}
+
+.expand-icon {
+    display: none;
+}
+
+@media (max-width: $mobileResolution) {
+
+    h4 {
+        margin-bottom: 5px;
+    }
+
+    h5 {
+        margin-top: 5px;
+    }
+
+    .filters {
+        min-width: 0;
+    }
+
+    .filter-list {
+        height: 0;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+
+    .expand-icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        font: {
+            weight: bold;
+            size: 30px;
+        }
+    }
+
+    .filter-list-expanded {
+        height: 120px;
+        transition: 0.3s;
+    }
+
+    .filters-header {
+        display: none;
+    }
+
+    .filters-header-mobile {
+        display: block;
+    }
 }

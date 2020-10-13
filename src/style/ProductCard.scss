@@ -63,3 +63,9 @@
     right: -30px;
     bottom: 60px;
 }
+
+@media (max-width: $mobileResolution) {
+    .product-card {
+        margin: 15px;
+    }
+}

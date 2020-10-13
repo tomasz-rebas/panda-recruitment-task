@@ -1,7 +1,7 @@
 import React from 'react';
 import './../style/Filters.scss';
 
-export default function Filters( { colorFilters, setColorFilters }) {
+export default function Filters( { colorFilters, setColorFilters, areFiltersExpanded, setAreFiltersExpanded }) {
 
     function changeFilter(event) {
         const { name } = event.target;
@@ -45,11 +45,20 @@ export default function Filters( { colorFilters, setColorFilters }) {
     
     return (
         <div className="filters">
-            <h4>Filter by</h4>
-            <h5>Color</h5>
-            <ul>
-                {filterInputs}
-            </ul>
+            <h4 className="filters-header">Filter by</h4>
+            <h4 
+                className="filters-header-mobile"
+                onClick={() => setAreFiltersExpanded(!areFiltersExpanded)}
+            >
+                Filter by
+            </h4>
+            <span className="expand-icon">{areFiltersExpanded ? '-' : '+'}</span>
+            <div className={areFiltersExpanded ? 'filter-list filter-list-expanded' : 'filter-list'}>
+                <h5>Color</h5>
+                <ul>
+                    {filterInputs}
+                </ul>
+            </div>
         </div>
     );
 }
