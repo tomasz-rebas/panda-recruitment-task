@@ -69,8 +69,8 @@
     font-size: 15px;
 }
 
-.expand-icon {
-    display: none;
+.filters-header-mobile {
+    position: relative;
 }
 
 @media (max-width: $mobileResolution) {
@@ -94,14 +94,14 @@
     }
 
     .expand-icon {
-        display: block;
         position: absolute;
         right: 0;
-        top: 0;
+        bottom: 0;
 
         font: {
+            family: 'DejaVu Sans';
+            size: 36px;
             weight: bold;
-            size: 30px;
         }
     }
 
@@ -115,6 +115,7 @@
     }
 
     .filters-header-mobile {
+        position: relative;
         display: block;
     }
 }

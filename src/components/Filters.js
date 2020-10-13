@@ -51,8 +51,8 @@ export default function Filters( { colorFilters, setColorFilters, areFiltersExpa
                 onClick={() => setAreFiltersExpanded(!areFiltersExpanded)}
             >
                 Filter by
+                <span className="expand-icon">{areFiltersExpanded ? '-' : '+'}</span>
             </h4>
-            <span className="expand-icon">{areFiltersExpanded ? '-' : '+'}</span>
             <div className={areFiltersExpanded ? 'filter-list filter-list-expanded' : 'filter-list'}>
                 <h5>Color</h5>
                 <ul>
