@@ -1,0 +1,24 @@
+--- See: overview.html, Requirements no. 13 ---
+
+"Justify the choice of the main technology (e.g. Vanilla JS / React / Vue etc.)."
+
+Your answer:
+
+ReactJS (and frontend UI frameworks/libraries in general) is a perfect solution for 
+dynamically changing webpage's content depending on the user's input - which is 
+exactly the case with the clothing products and their color filters provided in 
+this task.
+
+React does it quicker than Vannila JS, thanks to virtual DOM. The library calculates
+which DOM nodes have to be changed when user provides an input value and changes
+only these nodes (instead of all of them).
+
+Also, React's components make it easy to reuse similiar elements with different 
+data across the page.
+
+The product card is a good example. It follows the same build/pattern of thumbnail, 
+button, price etc. (which can be defined as a component), but the data and some 
+minor elements (sale icon, crossed out number) do change depending on the product.
+
+React routing could be used as well, potentially - depending on the content of 
+webpages that navigation section redirects to.
