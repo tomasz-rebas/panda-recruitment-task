@@ -22,7 +22,10 @@ export default function App() {
         .then(response => response.json())
         .then(data => {
             setProductData(data);
-        });
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+        });;
     }, []);
 
     return (
