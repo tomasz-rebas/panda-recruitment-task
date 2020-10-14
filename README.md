@@ -2,6 +2,8 @@ By default, React app runs on port 3001 and fetches the data from port 3000.
 
 `.env` file contains API reference. React app's port is set in `package.json`. Both can be changed if necessary.
 
+`node-sass` module transpiles .scss files automatically.
+
 ***
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
