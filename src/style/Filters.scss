@@ -2,7 +2,7 @@
 
 .filters {
     position: relative;
-    min-width: 200px;
+    min-width: 250px;
     color: $headerBackground;
 
     h4,
@@ -76,6 +76,12 @@
 .filters-header-mobile {
     position: relative;
     cursor: pointer;
+}
+
+@media (min-width: $mobileResolution + 1) and (max-width: 600px) {
+    .filters {
+        min-width: 170px;
+    }
 }
 
 @media (max-width: $mobileResolution) {
