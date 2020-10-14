@@ -75,6 +75,7 @@
 
 .filters-header-mobile {
     position: relative;
+    cursor: pointer;
 }
 
 @media (max-width: $mobileResolution) {
@@ -110,7 +111,7 @@
     }
 
     .filter-list-expanded {
-        height: 120px;
+        height: 150px;
         transition: 0.3s;
     }
 
