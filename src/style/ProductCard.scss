@@ -22,6 +22,10 @@
     }
 }
 
+.add-to-cart-button:focus {
+    border: none;
+}
+
 .add-to-cart-button:hover {
     background-color: $price;
     transition: 0.3s;
